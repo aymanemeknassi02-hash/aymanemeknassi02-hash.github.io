@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hcommerce — Salon à Tanger</title>
+<meta name="cwd-authenticity" content="CWD-SDD-20260829-8K3P">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241016;
+    --whitewash:#FBF1EC;
+    --whitewash-2:#F3E3DA;
+    --brass:#A85D42;
+    --brass-light:#D98F72;
+    --slate:#3A2530;
+    --mist:#E3C9BE;
+    --line: rgba(251,241,236,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Work Sans', sans-serif;
+    color:var(--slate);
+    background:var(--whitewash);
+    line-height:1.55;
+  }
+  h1,h2{ font-family:'Fraunces', serif; font-weight:500; letter-spacing:-0.01em; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--brass);
+  }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1000px; margin:0 auto; padding:0 28px; }
+
+  nav{ position:sticky; top:0; z-index:50; background:rgba(36,16,22,0.94); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .logo{ font-family:'Fraunces', serif; font-size:1.15rem; color:var(--whitewash); font-weight:600; }
+  .nav-cta{ background:var(--brass); color:var(--whitewash); padding:9px 18px; border-radius:3px; font-size:0.88rem; font-weight:600; }
+
+  .hero{ background:var(--ink); color:var(--whitewash); padding:80px 0 76px; }
+  .hero .wrap{ max-width:640px; }
+  .hero h1{ font-size:clamp(2rem, 4vw, 2.9rem); line-height:1.12; margin:16px 0 18px; }
+  .hero h1 em{ font-style:italic; color:var(--brass-light); }
+  .hero p{ color:var(--mist); font-size:1.05rem; margin-bottom:30px; }
+  .btn{ display:inline-block; padding:13px 26px; border-radius:3px; font-weight:600; font-size:0.94rem; transition:transform .15s ease; }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-primary{ background:var(--brass); color:var(--whitewash); }
+
+  section{ padding:72px 0; }
+  .section-head{ max-width:520px; margin-bottom:40px; }
+  .section-head h2{ font-size:clamp(1.5rem,2.4vw,2rem); margin-top:10px; }
+
+  .services{ background:var(--whitewash); }
+  .cards2{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+  .card{ background:#fff; border:1px solid var(--whitewash-2); border-radius:6px; padding:28px 24px; }
+  .card h3{ font-size:1.15rem; margin-bottom:8px; color:var(--ink); }
+  .card p{ color:#5c4650; font-size:0.94rem; }
+
+  .contact{ background:var(--whitewash-2); }
+  .contact-box{
+    background:var(--ink); color:var(--whitewash); border-radius:8px; padding:44px 40px;
+    display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center;
+  }
+  .contact-box h2{ font-size:clamp(1.4rem,2.2vw,1.8rem); margin-bottom:12px; }
+  .contact-box p{ color:var(--mist); margin-bottom:0; }
+  .contact-links{ display:flex; flex-direction:column; gap:12px; }
+  .contact-links a, .contact-links .static-row{ border:1px solid var(--line); border-radius:4px; padding:13px 16px; font-size:0.92rem; display:flex; justify-content:space-between; align-items:center; }
+  .contact-links .tag{ font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--brass-light); }
+
+  footer{ background:var(--ink); border-top:1px solid var(--line); padding:24px 0; }
+  footer .wrap{ display:flex; justify-content:space-between; color:var(--mist); font-size:0.8rem; flex-wrap:wrap; gap:8px; }
+
+  @media (max-width:640px){
+    .cards2{ grid-template-columns:1fr; }
+    .contact-box{ grid-template-columns:1fr; padding:32px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">Hcommerce</div>
+    <a href="#contact" class="nav-cta">Prendre rendez-vous</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Salon de coiffure &amp; soins · Tanger</span>
+    <h1>Hcommerce, votre salon à <em>Tanger</em></h1>
+    <p>Coupe, coiffure et soins du visage à Boukalf, Tanger — sur rendez-vous ou en passant, du lundi au dimanche de 9h à 20h.</p>
+    <a href="#contact" class="btn btn-primary">Nous contacter</a>
+  </div>
+</header>
+
+<section class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Nos prestations</span>
+      <h2>Ce que nous proposons</h2>
+    </div>
+    <div class="cards2">
+      <div class="card">
+        <h3>Coupe &amp; Coiffure</h3>
+        <p>Coupes, brushings et mises en forme adaptées à chaque cliente.</p>
+      </div>
+      <div class="card">
+        <h3>Soins du visage</h3>
+        <p>Soins du visage pour une peau nette et reposée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <div>
+        <span class="eyebrow" style="color:var(--brass-light)">Prêt à venir</span>
+        <h2>Prendre rendez-vous</h2>
+        <p>Appelez, écrivez sur WhatsApp, ou passez directement au salon.</p>
+      </div>
+      <div class="contact-links">
+        <a href="tel:+212619154150">0619154150 <span class="tag">APPEL</span></a>
+        <a href="https://wa.me/212619154150">0619154150 <span class="tag">WHATSAPP</span></a>
+        <a href="mailto:halima.haddade86@gmail.com">halima.haddade86@gmail.com <span class="tag">EMAIL</span></a>
+        <div class="static-row">Boukalf, Tanger <span class="tag">ADRESSE</span></div>
+        <div class="static-row">9h–20h <span class="tag">HORAIRES</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Hcommerce — Tanger, Maroc</span>
+    <span style="font-size:0.72rem; opacity:0.6;">Site réalisé par Cyber Web Development</span>
+  </div>
+</footer>
+
+<!-- Cyber Web Development — Authenticity Code: CWD-SDD-20260829-8K3P — verify at report of authenticity on file -->
+</body>
+</html>
