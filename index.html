@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Nom du commerce] — [Ville]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+<!-- Google Analytics (GA4) — remplacer G-XXXXXXX par l'ID réel du client -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=[GA_MEASUREMENT_ID]"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '[GA_MEASUREMENT_ID]');
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">[Nom du commerce]</div>
+    <div class="navlinks">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="lang-switch">
+      <a href="index.html" class="current">FR</a>
+      <a href="../en/index.html">EN</a>
+      <a href="../ar/index.html">AR</a>
+    </div>
+    <a href="contact.html" class="nav-cta">[HERO_CTA_LABEL]</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">[HERO_EYEBROW]</span>
+    <h1>[HERO_HEADLINE]</h1>
+    <p>[HERO_SUBTEXT]</p>
+    <div class="btn-row">
+      <a href="contact.html" class="btn btn-primary">[HERO_CTA_LABEL]</a>
+      <a href="services.html" class="btn btn-ghost">[HERO_SECONDARY_CTA_LABEL]</a>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">[ABOUT_EYEBROW]</span>
+      <h2 style="margin-block:12px 16px;">[ABOUT_HEADLINE]</h2>
+      <p>[ABOUT_TEXT — 3 à 5 phrases]</p>
+    </div>
+    <div class="about-photo">[PHOTO — remplacer par une vraie image]</div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Aperçu</span>
+      <h2>[SERVICES_PREVIEW_HEADLINE]</h2>
+      <p>[SERVICES_PREVIEW_SUBTEXT] — <a href="services.html" style="color:var(--accent);">voir tous les services →</a></p>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>[SERVICE_1_TITLE]</h3><p>[SERVICE_1_TEXT]</p></div>
+      <div class="card"><h3>[SERVICE_2_TITLE]</h3><p>[SERVICE_2_TEXT]</p></div>
+      <div class="card"><h3>[SERVICE_3_TITLE]</h3><p>[SERVICE_3_TEXT]</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© [ANNEE] [Nom du commerce] — [Ville], Maroc</span>
+    <span>[MENTION LEGALE / ICE si applicable]</span>
+  </div>
+</footer>
+
+</body>
+</html>
